@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@200;400;600;700;800&family=Urbanist:wght@200;400;600;700;800&display=swap");
+
+body {
+  font-family: "Great Vibes", cursive;
+  font-family: "Poppins", sans-serif;
+  font-family: "Urbanist", sans-serif;
+}
+
+/* .active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9ca3af;
+  color: black;
+  padding: 1rem;
+  border-radius: 100%;
+} */
+
+.darkActive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f172a;
+  color: white;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+
+@layer base {
+}
+
+@layer components {
+  .active{
+    @apply flex justify-center items-center bg-slate-400 text-primaryColor dark:text-darkPrimaryColor p-[1rem] rounded-full
+  }
+  /* .darkActive{
+    @apply
+  } */
+  .darkHover{
+    @apply bg-black/10 text-darkSecondaryColor
+  }
+  .normalHover{
+    @apply bg-white/30 text-secondaryColor
+  }
+  .btn {
+    @apply bg-primaryColor dark:bg-darkPrimaryColor hover:bg-secondaryColor text-white pl-4 pr-[5px] py-[5px] rounded-full  transition-all duration-200 dark:hover:bg-sky-700 flex justify-between items-center gap-x-4 hover:gap-8;
+  }
+  .icon{
+    @apply flex justify-center items-center bg-white text-primaryColor dark:text-darkPrimaryColor p-2 rounded-full h-full w-full text-xl
+  }
+  .navItem{
+    @apply cursor-pointer w-[60px] h-[60px] text-primaryColor dark:text-darkPrimaryColor rounded-full flex items-center justify-center hover:normalHover dark:hover:darkHover
+  }
+  .img {
+    @apply max-w-[200px] h-[200px] md:max-w-[400px] md:h-[400px] xl:max-w-[420px] xl:h-[420px] flex justify-center items-center;
+  }
+
+  .img img {
+    @apply w-full h-full rounded-full border-4 border-primaryColor dark:border-darkPrimaryColor;
+  }
+
+  .infotext{
+    @apply font-bold gap-2 pb-2 flex items-center flex-wrap text-secondaryColor dark:text-darkSecondaryColor
+  }
+
+  .textcontent{
+    @apply text-textColor dark:text-darkTextColor
+  }
+
+  .filterActice{
+    @apply text-primaryColor dark:text-darkPrimaryColor
+  }
+
+  .filterbtn{
+    @apply rounded-lg text-textColor dark:text-darkTextColor border border-primaryColor dark:border-darkPrimaryColor px-[30px] py-[2px] font-semibold shadow-md focus:bg-primaryColor dark:focus:bg-darkPrimaryColor
+  }
+
+  .seemore{
+    @apply flex justify-center items-center border border-primaryColor dark:border-darkPrimaryColor py-2 px-8 relative overflow-hidden transition duration-300 ease-out rounded-full
+  }
+
+  .projectCard{
+    @apply relative min-h-[400px] p-2 rounded-md bg-[#dae8e7] hover:bg-zinc-200 dark:bg-gray-700/80 dark:hover:bg-[#172131] hover:shadow-lg hover:shadow-slate-700
+  }
+
+  .cardTitle {
+    @apply text-xl font-bold text-gray-500 dark:text-gray-500 pt-2 pl-2
+  }
+
+  .viewDetails{
+    @apply bg-slate-950 text-white absolute rounded-md p-[5px] w-[50%] top-[50%] left-[25%] flex justify-center items-center gap-x-2 hover:gap-4 transition-all duration-300
+  }
+
+  .cardBtnContainer{
+    @apply flex absolute bottom-2 ml-[20%] justify-center items-center flex-wrap gap-4 mt-4
+  }
+
+  .cardLinkBtn{
+    @apply bg-primaryColor dark:bg-darkPrimaryColor rounded-3xl py-2 px-4 flex justify-between items-center cursor-pointer gap-2 hover:gap-6 text-white transition-all duration-300
+  }
+
+  .imageColor{
+    @apply invisible group-hover:visible cursor-pointer absolute w-full h-full bg-primaryColor  dark:bg-darkPrimaryColor opacity-70 rounded-md
+  }
+
+  /* form */
+
+  /* input field color */
+
+  .inputField{
+    @apply outline-none border rounded-md bg-transparent border-primaryColor dark:border-darkPrimaryColor  focus:border-focusBorderColor
+  }
+
+  .formbtn{
+    @apply flex justify-center items-center gap-2 hover:gap-4 bg-gradient-to-r from-primaryColor hover:bg-gradient-to-l hover:from-darkSecondaryColor hover:to-secondaryColor to-darkPrimaryColor dark:bg-gradient-to-r dark:from-darkPrimaryColor dark:to-secondaryColor  py-2 border-b-4 border-transparent rounded-md
+  }
+
+}
