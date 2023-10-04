@@ -17,7 +17,7 @@ export default function ProjectCard({ project, openModal, closeModal, isModalOpe
                 </div>
                 <div>
                     <h1 className='cardTitle'>{title}/{type}</h1>
-
+                    <p className='visible sm:invisible text-yellow-300'>[Click on the image for details]</p>
                 </div>
                 <div className='cardBtnContainer'>
                     <a href={git} className='cardLinkBtn'>
