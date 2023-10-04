@@ -40,7 +40,7 @@ export default function Skills() {
             </div>
             <div className=''>
                 <Filter handleFilter={handleFilter} />
-                <div className='pl-12 pt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8'>
+                <div className='px-8 md:pl-12 pt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8'>
                     {
                         data.slice(0, skillsLength).map((item, idx) => <SkillsCard key={idx} item={item} />)
                     }

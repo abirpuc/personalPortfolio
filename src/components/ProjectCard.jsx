@@ -28,21 +28,21 @@ export default function ProjectCard({ project, openModal, closeModal, isModalOpe
             </div>
 
             <PortfolioModal isOpen={isModalOpen} onClose={closeModal} git={git} live={live}>
-                <h1 className="text-2xl font-semibold">{title}</h1>
+                <h1 className="text-2xl text-black font-semibold">{title}</h1>
                 <div className='sm:p-4'>
                     <img className='w-full h-[200px] sm:h-[300px] rounded-md' src={thumbnail} alt="" />
                 </div>
                 <div>
-                    <h1 className='text-md font-bold'>Description:</h1>
-                    <div>
+                    <h1 className='text-md text-black font-bold'>Description:</h1>
+                    <div className='text-black'>
                         {
                             description.map((des, idx) => <li key={idx}>{des}</li>)
                         }
                     </div>
-                    <h1 className='pt-2'>
+                    <h1 className='pt-2 text-black sm:flex'>
                         <span className='text-md font-bold'>Tools&Technology:</span>
                         {
-                            tools.map((tool, id) => <>{tool},</>)
+                            tools.map((tool, id) => <p key={id} className='flex'><span>{tool}</span>,</p>)
                         }
 
                     </h1>

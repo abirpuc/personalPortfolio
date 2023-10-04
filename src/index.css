@@ -89,7 +89,7 @@ body {
   }
 
   .cardTitle {
-    @apply text-xl font-bold text-gray-500 dark:text-gray-500 pt-2 pl-2
+    @apply text-xl font-bold text-textColor dark:text-darkTextColor pt-2 pl-2
   }
 
   .viewDetails{

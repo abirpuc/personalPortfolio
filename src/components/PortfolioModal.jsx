@@ -20,8 +20,8 @@ export default function PortfolioModal({ isOpen, onClose, children,git, live }) 
                 </div>
                 <div className="modal-footer py-4 px-6 flex justify-between relative">
                     <div className='flex gap-x-4'>
-                        <a href={git} className='bg-primaryColor rounded-3xl py-2 px-4 flex justify-between items-center cursor-pointer gap-2 hover:gap-6 text-white transition-all duration-300'>Github<span><BsGithub /></span></a>
-                        <a href={live} className='bg-primaryColor rounded-3xl py-2 px-4 flex justify-between items-center cursor-pointer gap-2 hover:gap-6 text-white transition-all duration-300'>Live<span><FaLink /></span></a>
+                        <a href={git} className='bg-primaryColor dark:bg-darkPrimaryColor rounded-3xl py-2 px-4 flex justify-between items-center cursor-pointer gap-2 hover:gap-6 text-white transition-all duration-300'>Github<span><BsGithub /></span></a>
+                        <a href={live} className='bg-primaryColor dark:bg-darkPrimaryColor rounded-3xl py-2 px-4 flex justify-between items-center cursor-pointer gap-2 hover:gap-6 text-white transition-all duration-300'>Live<span><FaLink /></span></a>
                     </div>
                     
                 </div>
