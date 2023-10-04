@@ -117,7 +117,11 @@ body {
   }
 
   .formbtn{
-    @apply flex justify-center items-center gap-2 hover:gap-4 bg-gradient-to-r from-primaryColor hover:bg-gradient-to-l hover:from-darkSecondaryColor hover:to-secondaryColor to-darkPrimaryColor dark:bg-gradient-to-r dark:from-darkPrimaryColor dark:to-secondaryColor  py-2 border-b-4 border-transparent rounded-md
+    @apply flex justify-center items-center gap-2 text-white hover:gap-4 bg-gradient-to-r from-primaryColor hover:bg-gradient-to-l hover:from-darkSecondaryColor hover:to-secondaryColor to-darkPrimaryColor dark:bg-gradient-to-r dark:from-darkPrimaryColor dark:to-secondaryColor w-[96%] mx-auto py-2 border-b-4 border-transparent rounded-md
+  }
+
+  .socialIcon{
+    @apply text-gray-300 text-4xl bg-primaryColor hover:bg-secondaryColor dark:bg-darkPrimaryColor dark:hover:bg-sky-700 flex justify-center items-center w-[40px] h-[40px] p-2 rounded-full transition-all duration-200
   }
 
 }

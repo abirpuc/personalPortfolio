@@ -4,8 +4,7 @@ import { FaLocationDot } from 'react-icons/fa6'
 import { MdAddCall, MdEmail } from 'react-icons/md'
 import { SiMinutemailer } from 'react-icons/si'
 import { TbWorldCode } from 'react-icons/tb'
-import img_1 from '../assets/profile.jpg'
-
+import Socila from '../components/Socila'
 export default function Contact() {
 
   const [Name, setName] = useState(false)
@@ -30,14 +29,14 @@ export default function Contact() {
 
     // var mailformat = '/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/';
 
-    if(name === ''){
+    if (name === '') {
       setName(true)
       setnError('Please enter name')
-    }else if( name != ''){
+    } else if (name != '') {
       setName(false)
     }
 
-    if(email === ''){
+    if (email === '') {
       setEmail(true)
       seteError('Please enter email!')
     }
@@ -45,43 +44,43 @@ export default function Contact() {
     //   setEmail(true)
     //   seteError('email is not valid')
     // }
-    else{
+    else {
       setEmail(false)
     }
 
-    if(phone ===''){
+    if (phone === '') {
       setPhone(true)
       setpError('Please give a phone number!')
-    }else if(phone.length < 11 && phone.length > 11){
+    } else if (phone.length < 11 && phone.length > 11) {
       setPhone(true)
       setpError('Give a valid Phone number!')
-    }else{
+    } else {
       setPhone(false)
     }
 
     console.log(phone.length)
 
-    if(subject === ''){
+    if (subject === '') {
       setSubject(true)
       setsError('Enter your subject')
-    }else{
+    } else {
       setSubject(false)
     }
 
-    if(message === ''){
+    if (message === '') {
       setMessage(true)
       setmError('Write your message!')
-    }else{
+    } else {
       setMessage(false)
     }
     form.name.value = ''
-    form.email.value=''
-    form.phone.value=''
-    form.subject.value=''
-    form.message.value=''
+    form.email.value = ''
+    form.phone.value = ''
+    form.subject.value = ''
+    form.message.value = ''
     console.log('click send message button!')
   }
-  
+
 
 
   return (
@@ -112,11 +111,11 @@ export default function Contact() {
         </div>
         <div className='w-[80%] mx-auto border-2 border-primaryColor dark:border-darkPrimaryColor my-8 rounded-xl dark:bg-slate-800 dark:bg-opacity-10 backdrop-blur-'>
           <h1 className='text-md text-center my-2 uppercase font-bold tracking-widest bg-gradient-to-l from-primaryColor to-darkSecondaryColor bg-clip-text text-transparent'>Get in Touch</h1>
-          <div className='flex justify-between items-center gap-x-2 z-80'>
+          <div className='flex flex-col sm:flex-row justify-between items-center my-4 gap-x-2 z-80'>
             <form onSubmit={handleSubmit} className='grid grid-cols-1 gap-4 mx-4 my-4 w-full'>
-              <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 w-full'>
+              <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 w-[96%] mx-auto sm:w-full'>
                 <div className='w-full'>
-                  <input className='inputField  p-2 w-full text-md' type="text" name="name" placeholder='Enter your Name'/>
+                  <input className='inputField  p-2 w-full text-md' type="text" name="name" placeholder='Enter your Name' />
                   {
                     Name && <p className='text-red-700'>{nameError}</p>
                   }
@@ -140,15 +139,17 @@ export default function Contact() {
                   }
                 </div>
               </div>
-              <div>
-                <textarea placeholder='Write your message' className='inputField  p-2 w-full text-md' name="message" id=""></textarea>
+              <div className='w-[96%] mx-auto sm:w-full'>
+                <textarea placeholder='Write your message' className='inputField h-[100px] p-2 w-full text-md' name="message" id=""></textarea>
                 {
-                    Message && <p className='text-red-700'>{messageError}</p>
-                  }
+                  Message && <p className='text-red-700'>{messageError}</p>
+                }
               </div>
               <button type='submit' className='formbtn dark:hover:bg-gradient-to-r dark:hover:from-primaryColor dark:hover:vai-darkSecondaryColor dark:hover:to-darkPrimaryColor'>Send Message <span className='text-2xl'><SiMinutemailer /></span></button>
             </form>
-            <img className='hidden sm:block md:block sm:w-[30%] sm:h-[300px] sm:mr-2 sm:rounded-md sm:shadow-md sm:shadow-gray my-2 ' src={img_1} alt="" />
+            <div className=' md:w-[30%] flex justify-between items-center flex-wrap gap-2'>
+              <Socila/>
+            </div>
           </div>
         </div>
       </div>
