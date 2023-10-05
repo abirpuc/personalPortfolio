@@ -36,7 +36,8 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-2 gap-x-8">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:gird-cols-2 gap-y-2 gap-x-8 w-[80%] md:w-1/2 mx-auto"> */}
+          <div className='flex flex-col sm:flex-row md:flex-col lg:flex-row flex-wrap gap-8'>
             {
               aboutCard.map((about,idx) => <AboutCard key={idx} about={about}/>)
             }

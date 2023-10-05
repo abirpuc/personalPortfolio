@@ -31,7 +31,7 @@ export default function Portfolio() {
         <div className='sm:ml-[20%]'>
           {/* <ProjectFilter /> */}
         </div>
-        <div className='mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3'>
+        <div className='px-2 mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3'>
           {
             projectData.slice(0, projectLength).map(project => <ProjectCard
               key={projects.id}

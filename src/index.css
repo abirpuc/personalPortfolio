@@ -97,7 +97,7 @@ body {
   }
 
   .cardBtnContainer{
-    @apply flex absolute bottom-2 ml-[20%] justify-center items-center flex-wrap gap-4 mt-4
+    @apply flex absolute bottom-2 ml-[10%] sm:ml-[20%] md:ml-[7%] justify-center items-center gap-4 mt-4
   }
 
   .cardLinkBtn{
