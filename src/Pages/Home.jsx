@@ -40,7 +40,7 @@ export default function Home({ theme, setTheme }) {
                                         repeat={Infinity}
                                     />
                                     <div className='flex md:flex-row items-center gap-x-4 my-2'>
-                                        <button className='btn my-4 sm:my-0 text-md'>Resume <span className="icon"><GoDownload/></span></button>
+                                        <a href="https://t.ly/8rXkv" target='_blanck' className='btn my-4 sm:my-0 cursor-pointer text-md'>Resume <span className="icon"><GoDownload/></span></a>
                                         <Link to="contact" smooth={true}><button className='btn text-md'>Contact <span className="icon"><BsFillChatSquareDotsFill/></span></button></Link>
                                     </div>
                                 </div>

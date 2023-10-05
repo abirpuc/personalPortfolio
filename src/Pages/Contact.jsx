@@ -106,7 +106,7 @@ export default function Contact() {
           </div>
           <div className='flex flex-col items-center justify-center flex-wrap'>
             <div className='bg-primaryColor text-white dark:bg-darkPrimaryColor dark:text-darkTextColor w-[50px] h-[50px] rounded-full flex items-center justify-center p-2 text-2xl'><TbWorldCode /></div>
-            <a href='' className='pt-2 text-primaryColor dark:text-darkPrimaryColor'>mozzammel-hossen.netlify</a>
+            <a href='https://mozzammel-hossen.netlify.app' target='_blanck' className='pt-2 text-primaryColor dark:text-darkPrimaryColor underline'>www.mozzammel.com</a>
           </div>
         </div>
         <div className='w-[80%] mx-auto border-2 border-primaryColor dark:border-darkPrimaryColor my-8 rounded-xl dark:bg-slate-800 dark:bg-opacity-10 backdrop-blur-'>
