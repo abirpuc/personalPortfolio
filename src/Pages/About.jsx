@@ -36,7 +36,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-2 w-1/2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-2 gap-x-8">
             {
               aboutCard.map((about,idx) => <AboutCard key={idx} about={about}/>)
             }
