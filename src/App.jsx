@@ -1,4 +1,4 @@
-import reactLogo from './assets/react.svg'
+
 import './App.css'
 import Home from './Pages/Home'
 import About from './Pages/About'
