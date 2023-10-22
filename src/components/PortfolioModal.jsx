@@ -6,7 +6,7 @@ import { AiFillCloseCircle } from 'react-icons/ai';
 export default function PortfolioModal({ isOpen, onClose, children,git, live }) {
     if (!isOpen) return null;
     return (
-        <div className="fixed inset-0 flex items-center justify-center z-50 ">
+        <div className="fixed inset-0 flex items-center justify-center z-50 sm:pt-12 md:pt-2">
             <div className="modal-overlay absolute inset-0 bg-gray-500 opacity-75"></div>
             <div className="modal-container bg-white w-[80%] md:w-[60%] mx-auto rounded shadow-lg z-50 overflow-x-auto overflow-y-auto">
                 <div className="modal-content py-4 text-left w-full px-6 relative">

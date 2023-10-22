@@ -4,31 +4,33 @@ import { FaLink } from 'react-icons/fa'
 import { GiArchiveResearch } from 'react-icons/gi'
 import PortfolioModal from './PortfolioModal'
 
-export default function ProjectCard({ project, openModal, closeModal, isModalOpen }) {
-    const { title, type, git, live, thumbnail, tools, description } = project
+export default function ProjectCard({ project, openModal, closeModal, isModalOpen, activeId}) {
+    const {id, title, type, git, live, thumbnail, tools, description,version} = project
+
     return (
         <>
             <div className='projectCard'>
                 <div className='group relative rounded-md w-full h-[250px]'>
                     <div className='imageColor'>
-                        <button onClick={openModal} className='viewDetails'>View Details <span><GiArchiveResearch /></span></button>
+                        <button onClick={()=>openModal(id)} className='viewDetails'>View Details <span><GiArchiveResearch /></span></button>
                     </div>
                     <img src={thumbnail} className='w-full h-full rounded-md' alt="" />
                 </div>
                 <div>
-                    <h1 className='cardTitle'>{title}/{type}</h1>
+                    <h1 className='cardTitle'>{title}/{type}{version === 'beta'?<span className='ml-[5px] bg-yellow-400 rounded-sm text-black font-[10px]'>Beta</span>:''}</h1>
                     <p className='visible sm:invisible text-yellow-300'>[Click on the image for details]</p>
                 </div>
                 <div className='cardBtnContainer'>
-                    <a href={git} className='cardLinkBtn'>
+                    <a href={git} target='_blanck' className='cardLinkBtn cursor-pointer'>
                     Github<span><BsGithub /></span>
                     </a>
-                    <a href={live} className='cardLinkBtn'>Live<span><FaLink /></span></a>
+                    <a href={live} target='_blanck' className='cardLinkBtn cursor-pointer'>Live<span><FaLink /></span></a>
                 </div>
             </div>
 
-            <PortfolioModal isOpen={isModalOpen} onClose={closeModal} git={git} live={live}>
-                <h1 className="text-2xl text-black font-semibold">{title}</h1>
+            {
+                id === activeId ?   <PortfolioModal isOpen={isModalOpen} onClose={closeModal} git={git} live={live}>
+                <h1 className="text-2xl text-black font-semibold">{title}/{type}</h1>
                 <div className='sm:p-4'>
                     <img className='w-full h-[200px] sm:h-[300px] rounded-md' src={thumbnail} alt="" />
                 </div>
@@ -39,7 +41,7 @@ export default function ProjectCard({ project, openModal, closeModal, isModalOpe
                             description.map((des, idx) => <li key={idx}>{des}</li>)
                         }
                     </div>
-                    <h1 className='pt-2 text-black sm:flex'>
+                    <h1 className='pt-2 text-black sm:flex flex-wrap'>
                         <span className='text-md font-bold'>Tools&Technology:</span>
                         {
                             tools.map((tool, id) => <p key={id} className='flex'><span>{tool}</span>,</p>)
@@ -47,7 +49,8 @@ export default function ProjectCard({ project, openModal, closeModal, isModalOpe
 
                     </h1>
                 </div>
-            </PortfolioModal>
+            </PortfolioModal>:''
+            }
         </>
     )
 }

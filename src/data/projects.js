@@ -1,143 +1,145 @@
-import img_1 from '../../public/pro_1.jpeg'
+import portfolio from '../assets/portfolio_project.PNG'
+import img_1 from '../assets/resale_market.png'
 export const projects  =[
     {
         id:1,
-        title:'Triple Travel',
+        title:'Personal Portfolio',
         type: 'FrontEnd',
-        git:'http//:git-hub/mh-abit/travel-trip',
-        live:'http//:netlify/trip-travel',
-        thumbnail: img_1,
-        tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
+        version:'beta',
+        git:'https://github.com/abirpuc/personalPortfolio',
+        live:'https://mozzammel-hossen.netlify.app/',
+        thumbnail: portfolio,
+        tools:["ReactJs","TailwindCSS", "EmailJs"],
         description:[
-            "this project frontend project this data comes form a demo api.",
-            "If you use this app you can easily travel any where and sfe travel with low cost.",
-            "If you use this app you can easily travel any where and sfe travel with low cost."
+            "My personal Portfolio app This is you are also visiting.",
+            "Responsive, you can use light or dark theme.",
         ],
     },
     {
         id:2,
-        title:'News app',
-        type: 'FrontEnd',
-        git:'http//:git-hub/mh-abit/travel-trip',
-        live:'http//:netlify/trip-travel',
+        title:'Used Product Resale ',
+        type: 'Fullstack',
+        version: '',
+        git:'https://github.com/abirpuc/used-products-resale-client',
+        live:'https://used-products-resale-mar-e4101.web.app/',
         thumbnail: img_1,
         tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
         description:[
-            "this project frontend project this data comes form a demo api.",
-            "If you use this app you can easily travel any where and sfe travel with low cost.",
+            "This is an e-commerce type application, where users/sellers will can sell an old product",
+            "If user/seller sell their product easily they can advertise their product.Advertised products will appear in the ad section.",
             "If you use this app you can easily travel any where and sfe travel with low cost."
         ],
     },
-    {
-        id:3,
-        title:'Old Product Seller',
-        type: 'FrontEnd',
-        git:'http//:git-hub/mh-abit/travel-trip',
-        live:'http//:netlify/trip-travel',
-        thumbnail: img_1,
-        tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
-        description:[
-            "this project frontend project this data comes form a demo api.",
-            "If you use this app you can easily travel any where and sfe travel with low cost.",
-            "If you use this app you can easily travel any where and sfe travel with low cost."
-        ],
-    },
-    {
-        id:4,
-        title:'Picture review',
-        type: 'FrontEnd',
-        git:'http//:git-hub/mh-abit/travel-trip',
-        live:'http//:netlify/trip-travel',
-        thumbnail: img_1,
-        tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
-        description:[
-            "this project frontend project this data comes form a demo api.",
-            "If you use this app you can easily travel any where and sfe travel with low cost.",
-            "If you use this app you can easily travel any where and sfe travel with low cost."
-        ],
-    },
-    {
-        id:5,
-        title:'Online tech Platform',
-        type: 'FrontEnd',
-        git:'http//:git-hub/mh-abit/travel-trip',
-        live:'http//:netlify/trip-travel',
-        thumbnail: img_1,
-        tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
-        description:[
-            "this project frontend project this data comes form a demo api.",
-            "If you use this app you can easily travel any where and sfe travel with low cost.",
-            "If you use this app you can easily travel any where and sfe travel with low cost."
-        ],
-    },
-    {
-        id:6,
-        title:'Movie Site',
-        type: 'FrontEnd',
-        git:'http//:git-hub/mh-abit/travel-trip',
-        live:'http//:netlify/trip-travel',
-        thumbnail: img_1,
-        tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
-        description:[
-            "this project frontend project this data comes form a demo api.",
-            "If you use this app you can easily travel any where and sfe travel with low cost.",
-            "If you use this app you can easily travel any where and sfe travel with low cost."
-        ],
-    },
-    {
-        id:7,
-        title:'Book seller Book seller Book seller Book seller',
-        type: 'FrontEnd',
-        git:'http//:git-hub/mh-abit/travel-trip',
-        live:'http//:netlify/trip-travel',
-        thumbnail: img_1,
-        tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
-        description:[
-            "this project frontend project this data comes form a demo api.",
-            "If you use this app you can easily travel any where and sfe travel with low cost.",
-            "If you use this app you can easily travel any where and sfe travel with low cost."
-        ],
-    },
-    {
-        id:7,
-        title:'Book seller Book seller Book seller Book seller',
-        type: 'FrontEnd',
-        git:'http//:git-hub/mh-abit/travel-trip',
-        live:'http//:netlify/trip-travel',
-        thumbnail: img_1,
-        tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
-        description:[
-            "this project frontend project this data comes form a demo api.",
-            "If you use this app you can easily travel any where and sfe travel with low cost.",
-            "If you use this app you can easily travel any where and sfe travel with low cost."
-        ],
-    },
-    {
-        id:7,
-        title:'Book seller Book seller Book seller Book seller',
-        type: 'FrontEnd',
-        git:'http//:git-hub/mh-abit/travel-trip',
-        live:'http//:netlify/trip-travel',
-        thumbnail: img_1,
-        tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
-        description:[
-            "this project frontend project this data comes form a demo api.",
-            "If you use this app you can easily travel any where and sfe travel with low cost.",
-            "If you use this app you can easily travel any where and sfe travel with low cost."
-        ],
-    },
-    {
-        id:7,
-        title:'Book seller Book seller Book seller Book seller',
-        type: 'FrontEnd',
-        git:'http//:git-hub/mh-abit/travel-trip',
-        live:'http//:netlify/trip-travel',
-        thumbnail: img_1,
-        tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
-        description:[
-            "this project frontend project this data comes form a demo api.",
-            "If you use this app you can easily travel any where and sfe travel with low cost.",
-            "If you use this app you can easily travel any where and sfe travel with low cost."
-        ],
-    },
+    // {
+    //     id:3,
+    //     title:'Old Product Seller',
+    //     type: 'FrontEnd',
+    //     git:'http//:git-hub/mh-abit/travel-trip',
+    //     live:'http//:netlify/trip-travel',
+    //     thumbnail: img_1,
+    //     tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
+    //     description:[
+    //         "this project frontend project this data comes form a demo api.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost."
+    //     ],
+    // },
+    // {
+    //     id:4,
+    //     title:'Picture review',
+    //     type: 'FrontEnd',
+    //     git:'http//:git-hub/mh-abit/travel-trip',
+    //     live:'http//:netlify/trip-travel',
+    //     thumbnail: img_1,
+    //     tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
+    //     description:[
+    //         "this project frontend project this data comes form a demo api.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost."
+    //     ],
+    // },
+    // {
+    //     id:5,
+    //     title:'Online tech Platform',
+    //     type: 'FrontEnd',
+    //     git:'http//:git-hub/mh-abit/travel-trip',
+    //     live:'http//:netlify/trip-travel',
+    //     thumbnail: img_1,
+    //     tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
+    //     description:[
+    //         "this project frontend project this data comes form a demo api.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost."
+    //     ],
+    // },
+    // {
+    //     id:6,
+    //     title:'Movie Site',
+    //     type: 'FrontEnd',
+    //     git:'http//:git-hub/mh-abit/travel-trip',
+    //     live:'http//:netlify/trip-travel',
+    //     thumbnail: img_1,
+    //     tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
+    //     description:[
+    //         "this project frontend project this data comes form a demo api.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost."
+    //     ],
+    // },
+    // {
+    //     id:7,
+    //     title:'Book seller Book seller Book seller Book seller',
+    //     type: 'FrontEnd',
+    //     git:'http//:git-hub/mh-abit/travel-trip',
+    //     live:'http//:netlify/trip-travel',
+    //     thumbnail: img_1,
+    //     tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
+    //     description:[
+    //         "this project frontend project this data comes form a demo api.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost."
+    //     ],
+    // },
+    // {
+    //     id:7,
+    //     title:'Book seller Book seller Book seller Book seller',
+    //     type: 'FrontEnd',
+    //     git:'http//:git-hub/mh-abit/travel-trip',
+    //     live:'http//:netlify/trip-travel',
+    //     thumbnail: img_1,
+    //     tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
+    //     description:[
+    //         "this project frontend project this data comes form a demo api.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost."
+    //     ],
+    // },
+    // {
+    //     id:7,
+    //     title:'Book seller Book seller Book seller Book seller',
+    //     type: 'FrontEnd',
+    //     git:'http//:git-hub/mh-abit/travel-trip',
+    //     live:'http//:netlify/trip-travel',
+    //     thumbnail: img_1,
+    //     tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
+    //     description:[
+    //         "this project frontend project this data comes form a demo api.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost."
+    //     ],
+    // },
+    // {
+    //     id:7,
+    //     title:'Book seller Book seller Book seller Book seller',
+    //     type: 'FrontEnd',
+    //     git:'http//:git-hub/mh-abit/travel-trip',
+    //     live:'http//:netlify/trip-travel',
+    //     thumbnail: img_1,
+    //     tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
+    //     description:[
+    //         "this project frontend project this data comes form a demo api.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost.",
+    //         "If you use this app you can easily travel any where and sfe travel with low cost."
+    //     ],
+    // },
 ]

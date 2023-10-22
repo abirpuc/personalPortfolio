@@ -10,13 +10,15 @@ export default function Portfolio() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [projectData, setProjectData] = useState(projects)
   const [projectLength, setProjectLength] = useState(6)
+  const [activeId, setActiveId] = useState(null)
 
   const handleProjects = () => {
     setProjectLength(projectLength + 3)
   }
 
-  const openModal = () => {
+  const openModal = (e) => {
     setIsModalOpen(true);
+    setActiveId(e)
   };
 
   const closeModal = () => {
@@ -39,6 +41,7 @@ export default function Portfolio() {
               isModalOpen={isModalOpen}
               openModal={openModal}
               closeModal={closeModal}
+              activeId={activeId}
             />)
           }
         </div>
