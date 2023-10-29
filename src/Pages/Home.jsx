@@ -11,11 +11,11 @@ export default function Home({ theme, setTheme }) {
     return (
         <section id="home" className='min-h-screen bg-pattern dark:bg-darkPattern'>
             <Header theme={theme} setTheme={setTheme} />
-            <div className="container mx-auto pt-20">
+            <div className="container mx-auto pt-20" >
                 <div className='w-full mx-auto'>
                     <div className='dark:bg-slate-800 dark:bg-opacity-10 backdrop-blur- border-2 rounded-xl z-20'>
                         <div className='flex flex-col-reverse justify-center items-center md:flex-row md:justify-evenly p-8 md:p-12'>
-                            <div className='py-8 flex flex-col justify-start'>
+                            <div className='py-8 flex flex-col justify-start' data-aos="fade-right" data-aos-duration="10000">
                                 <div className='sm:w-full sm:mx-auto md:w-full'>
                                     <p className='text-primaryColor dark:text-darkPrimaryColor text-xl'>Hello, welcome to my page</p>
                                     <p className='text-textColor dark:text-darkTextColor text-xl'>my name is </p>
@@ -45,8 +45,8 @@ export default function Home({ theme, setTheme }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className='img'>
-                                <img src={img} alt="mozzammel hossen" />
+                            <div className='img' data-aos="fade-left" data-aos-duration="500000">
+                                <img src={img} alt="mozzammel hossen" loading='lazy'/>
                             </div>
                         </div>
                     </div>

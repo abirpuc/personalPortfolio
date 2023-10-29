@@ -9,15 +9,16 @@ export default function ProjectCard({ project, openModal, closeModal, isModalOpe
 
     return (
         <>
-            <div className='projectCard'>
+            <div className='projectCard' data-aos="flip-up" data-aos-duration="10000">
                 <div className='group relative rounded-md w-full h-[250px]'>
                     <div className='imageColor'>
                         <button onClick={()=>openModal(id)} className='viewDetails'>View Details <span><GiArchiveResearch /></span></button>
                     </div>
-                    <img src={thumbnail} className='w-full h-full rounded-md' alt="" />
+                    <img src={thumbnail} className='w-full h-full rounded-md' alt="" loading='lazy'/>
                 </div>
                 <div>
-                    <h1 className='cardTitle'>{title}/{type}{version === 'beta'?<span className='ml-[5px] bg-yellow-400 rounded-sm text-black font-[10px]'>Beta</span>:''}</h1>
+                    <h1 className='cardTitle'>{title}/{type}</h1>
+                    <p>{version === 'beta'?<span className='ml-[5px] bg-yellow-400 rounded-sm text-black font-[10px]'>Beta</span>:''}</p>
                     <p className='visible sm:invisible text-yellow-300'>[Click on the image for details]</p>
                 </div>
                 <div className='cardBtnContainer'>

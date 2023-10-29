@@ -1,22 +1,19 @@
 import React, { useState } from 'react'
 import SpanText from '../components/SpanText';
-import CountUp from 'react-countup';
-import ScrollTrigger from 'react-scroll-trigger';
 import { about } from '../data/about';
 import Skills from '../components/Skills';
 import { aboutCard } from '../data/aboutCard';
 import AboutCard from '../components/AboutCard';
 
 export default function About() {
-  const [scrollOn, setScrollOn] = useState(false)
   return (
     <section className='container mx-auto pt-20' id="about">
-      <div>
+      <div data-aos="fade-up" data-aos-duration="100000">
         <h1 className="flex justify-center items-center md:gap-x-2 text-2xl sm:text-4xl font-semibold md:text-8xl md:font-bold uppercase tracking-widest">About <SpanText className="ml-2"> Me</SpanText></h1>
       </div>
       <div className="mt-1 md:mt-8">
         <div className="flex flex-col justify-between items-center md:flex-row lg:flex-row">
-          <div>
+          <div data-aos="fade-right" data-aos-duration="100000">
             <h1 className="text-center text-xl md:text-3xl tracking-wide py-2">Personal Info</h1>
             <div className="flex flex-col md:flex-row justify-between items-center w-full gap-y-2">
               <div className="w-full pl-4">

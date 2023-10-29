@@ -7,6 +7,8 @@ import Footer from './components/Footer'
 import Contact from './Pages/Contact'
 import Navbar from './components/Navbar'
 import { useEffect, useState } from 'react'
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -31,9 +33,13 @@ function App() {
     }
   },[theme])
 
+  useEffect(()=>{
+    AOS.init()
+  }, [])
+
   return (
     <section className='bg-backgroundColor text-textColor dark:bg-darkBackgroundColor dark:text-darkTextColor duration-300'>
-      <Navbar/>
+      <Navbar data-aos="fade-in"/>
       <main>
         <Home theme={theme} setTheme={setTheme}/>
         <About />

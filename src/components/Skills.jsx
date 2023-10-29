@@ -35,7 +35,7 @@ export default function Skills() {
 
     return (
         <>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="100000">
                 <h1 className="flex justify-center items-center md:gap-x-2 text-2xl sm:text-4xl font-semibold md:text-8xl md:font-bold uppercase tracking-widest"><SpanText className="">MY</SpanText> Skills</h1>
             </div>
             <div className=''>

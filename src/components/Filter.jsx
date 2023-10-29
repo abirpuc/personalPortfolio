@@ -3,7 +3,7 @@ import { skillTitle } from '../data/skills'
 
 export default function Filter({handleFilter}) {
     return (
-        <div className=' flex flex-col sm:flex-row gap-2 justify-center py-4 mx-12 flex-wrap'>
+        <div className='flex flex-col sm:flex-row gap-2 justify-center py-4 mx-12 flex-wrap' data-aos="fade-up" data-aos-duration="100000">
             {
                 skillTitle.map((item, idx) => <button onClick={()=>handleFilter(item.type)} key={idx} className='filterbtn transition-all duration-200 text-md'>{item.title}</button>)
             }
