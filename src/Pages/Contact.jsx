@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import SpanText from '../components/SpanText'
 import Socila from '../components/Socila'
 import emailjs from '@emailjs/browser';
@@ -29,7 +29,7 @@ export default function Contact() {
 
     if (error.name || error.email || error.phone || error.subject || error.message) {
       console.log('value: ', name, email, phone, subject, message)
-      emailjs.sendForm('service_866l8c6', 'template_hwx1inv', formRef.current, '0NxN4yzFKzag-y0C3')
+      // emailjs.sendForm('service_866l8c6', 'template_hwx1inv', formRef.current, '0NxN4yzFKzag-y0C3')
       values.name = ""
       values.email = ""
       values.phone = ""
@@ -54,6 +54,7 @@ export default function Contact() {
       <Toaster
         position="top-center"
         reverseOrder={true}
+        className="mt-4"
       />
       <div className='container mx-auto relative'>
         <div data-aos="fade-in" data-aos-duration="10000">

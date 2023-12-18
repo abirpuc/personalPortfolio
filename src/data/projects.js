@@ -1,5 +1,6 @@
 import portfolio from '../assets/portfolio_project.PNG'
 import img_1 from '../assets/resale_market.png'
+import institution from '../assets/school_layout.jpg'
 export const projects  =[
     {
         id:1,
@@ -30,20 +31,20 @@ export const projects  =[
             "If you use this app you can easily travel any where and sfe travel with low cost."
         ],
     },
-    // {
-    //     id:3,
-    //     title:'Old Product Seller',
-    //     type: 'FrontEnd',
-    //     git:'http//:git-hub/mh-abit/travel-trip',
-    //     live:'http//:netlify/trip-travel',
-    //     thumbnail: img_1,
-    //     tools:["ReactJs","TailwindCSS", "Bootstrap", "CSS", "Redux"],
-    //     description:[
-    //         "this project frontend project this data comes form a demo api.",
-    //         "If you use this app you can easily travel any where and sfe travel with low cost.",
-    //         "If you use this app you can easily travel any where and sfe travel with low cost."
-    //     ],
-    // },
+    {
+        id:3,
+        title:'Institution Website',
+        type: 'FrontEnd',
+        git:false,
+        live:'https://teknafgovtcollege.edu.bd/',
+        thumbnail: institution,
+        tools:["ReactJs", "CSS", "Wol Carousel"],
+        description:[
+            "this project design by automate it limited and me for school, collage and madrasah webpage",
+            "I this this website use more than 50+ institution.",
+            "this website fully dynamically like background image, banner image, name, route-link, here we can see current weather.[NB: automate it limited convert design with vuejs]"
+        ],
+    },
     // {
     //     id:4,
     //     title:'Picture review',

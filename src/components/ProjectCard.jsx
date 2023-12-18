@@ -22,9 +22,12 @@ export default function ProjectCard({ project, openModal, closeModal, isModalOpe
                     <p className='visible sm:invisible text-yellow-300'>[Click on the image for details]</p>
                 </div>
                 <div className='cardBtnContainer'>
-                    <a href={git} target='_blanck' className='cardLinkBtn cursor-pointer'>
+                   { 
+                   git === false ? '':
+                   <a href={git} target='_blanck' className='cardLinkBtn cursor-pointer'>
                     Github<span><BsGithub /></span>
                     </a>
+                    }
                     <a href={live} target='_blanck' className='cardLinkBtn cursor-pointer'>Live<span><FaLink /></span></a>
                 </div>
             </div>
